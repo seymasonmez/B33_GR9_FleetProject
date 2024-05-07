@@ -14,14 +14,21 @@ public class FleetVehiclesPage {
     @FindBy(linkText = "...")
     public WebElement dotsIcon;
 
-    @FindBy(xpath = "//ul[contains(@data-options, 'true,')][.//a[@title='View']]")
+    @FindBy(xpath = "(//ul//li[@class='launcher-item']//*[contains(@title,'View')])[1]")
     public WebElement viewIcon;
 
-    @FindBy(xpath = "//ul[contains(@data-options, 'true,')][.//a[@title='Edit']]")
+    @FindBy(xpath = "(//ul//li[@class='launcher-item']//*[contains(@title,'Edit')])[1]")
     public WebElement editIcon;
 
-    @FindBy(xpath = "//ul[contains(@data-options, 'true,')][.//a[@title='Delete']]")
+    @FindBy(xpath = "(//ul//li[@class='launcher-item']//*[contains(@title,'Delete')])[1]")
     public WebElement deleteIcon;
+
+
+
+
+
+   
+
 
 
 

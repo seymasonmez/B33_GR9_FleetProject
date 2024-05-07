@@ -23,9 +23,11 @@ public class US06_EditCarInfoIconStepDefs extends BasePage {
     public void user_hover_mouse_over_the_dots() {
         BrowserUtils.hover(fvPage.dotsIcon);
 
+
     }
     @Then("user verifies View, Edit and Delete options are displayed")
     public void user_verifies_options_are_displayed() {
+
 
         Assert.assertTrue("View Icon is not displayed", fvPage.viewIcon.isDisplayed());
         Assert.assertTrue("Edit Icon is not displayed", fvPage.editIcon.isDisplayed());
