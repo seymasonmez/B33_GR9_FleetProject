@@ -46,6 +46,20 @@ public class VehicleModelPage {
     @FindBy(xpath = "//div[.='You do not have permission to perform this action.']")
     public WebElement noPermissionMessage;
 
+    @FindBy(className = "error-page-content")
+    private WebElement errorPageContent;
+
+    @FindBy(className = "error-page-description")
+    private WebElement errorPageDescription;
+
+  
+    public boolean isErrorPageDisplayed() {
+        return errorPageContent.isDisplayed();
+    }
+    public String getErrorMessage() {
+        return errorPageDescription.getText();
+    }
+
 
 
 
