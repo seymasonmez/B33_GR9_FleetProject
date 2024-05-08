@@ -47,6 +47,7 @@ public class VehicleModelPage {
     public WebElement noPermissionMessage;
 
 
+<<<<<<< HEAD
     @FindBy(className = "error-page-content")
     private WebElement errorPageContent;
 
@@ -64,6 +65,8 @@ public class VehicleModelPage {
     }
 
 
+=======
+>>>>>>> 5f9526653a9c8a6acc0352f2de951f44d9006036
 
 
 
@@ -96,4 +99,9 @@ public class VehicleModelPage {
         }
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 5f9526653a9c8a6acc0352f2de951f44d9006036

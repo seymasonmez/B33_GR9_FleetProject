@@ -115,6 +115,7 @@ public class US05_VehiclesModelpageStep {
     public void iShouldSeeTheMessage(String arg0) {
         VehicleModelPage vehicleModelPage = new VehicleModelPage();
 
+<<<<<<< HEAD
 
         Driver.getDriver().navigate().refresh();
 
@@ -128,10 +129,39 @@ public class US05_VehiclesModelpageStep {
 
             Assert.fail("Error: Page with error message is not displayed after page refresh.");
         }
+=======
+        try {
+            Assert.assertEquals(arg0, vehicleModelPage.noPermissionMessage.getText());
+        } catch (AssertionError e) {
+
+            for (int i = 0; i < 5; i++) {
+                Driver.getDriver().navigate().refresh();
+                try {
+                    Assert.assertEquals(arg0, vehicleModelPage.noPermissionMessage.getText());
+
+                    throw new AssertionError("Error:  403 Forbidden..");
+                } catch (AssertionError ex) {
+
+                }
+            }
+        }
+
+
+        Assert.fail("Error: Message not displayed after page refreshes.");
+
+
+
+
+
+>>>>>>> 5f9526653a9c8a6acc0352f2de951f44d9006036
     }
 
     @And("I should not be able to access the Vehicles Model page")
     public void iShouldNotBeAbleToAccessTheVehiclesModelPage() {
         System.out.println("You do not have permission to perform this action.");
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5f9526653a9c8a6acc0352f2de951f44d9006036
