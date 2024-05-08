@@ -52,7 +52,7 @@ public class VehicleModelPage {
     @FindBy(className = "error-page-description")
     private WebElement errorPageDescription;
 
-  
+
     public boolean isErrorPageDisplayed() {
         return errorPageContent.isDisplayed();
     }
@@ -94,4 +94,3 @@ public class VehicleModelPage {
     }
 
 }
-

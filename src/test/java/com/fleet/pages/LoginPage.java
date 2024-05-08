@@ -1,7 +1,6 @@
 package com.fleet.pages;
 
 
-import com.fleet.utilities.BrowserUtils;
 import com.fleet.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,15 +8,16 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-    public LoginPage() {
+    public LoginPage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(id = "prependedInput")
+    @FindBy(id="prependedInput")
     public WebElement userName;
 
 
-    @FindBy(id = "prependedInput2")
+
+    @FindBy(id="prependedInput2")
     public WebElement password;
 
     @FindBy(name = "_submit")
