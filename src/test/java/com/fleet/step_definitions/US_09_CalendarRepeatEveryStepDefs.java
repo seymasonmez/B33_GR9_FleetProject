@@ -43,14 +43,12 @@ public class US_09_CalendarRepeatEveryStepDefs extends BasePage {
     }
     @When("user enters more than {int} in the calendar Repeat Every input box")
     public void user_enters_more_than_in_the_calendar_repeat_every_input_box(Integer int1) {
-      //  CreateCalendarEventPage createCalendarEventPage = new CreateCalendarEventPage();
         createCalendarEventPage.repeatEveryNumberBox.sendKeys(Keys.BACK_SPACE+Integer.toString(100)+ Keys.ENTER);
     }
     @Then("users should see “The value have not to be more than {int}.”")
     public void users_should_see_the_value_have_not_to_be_more_than(Integer int1) {
-       // CreateCalendarEventPage createCalendarEventPage = new CreateCalendarEventPage();
         createCalendarEventPage.repeatEveryNumberErrorMessage.isDisplayed();
-        //createCalendarEventPage.repeatEveryNumberErrorMessage.getText();
+
         System.out.println(createCalendarEventPage.repeatEveryNumberErrorMessage.getText());
         Assert.assertEquals("The value have not to be more than 99.", createCalendarEventPage.repeatEveryNumberErrorMessage.getText());
     }
