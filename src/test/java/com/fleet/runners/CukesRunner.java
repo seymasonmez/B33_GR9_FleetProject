@@ -1,4 +1,3 @@
-
 package com.fleet.runners;
 
 import io.cucumber.junit.Cucumber;
@@ -20,3 +19,5 @@ import org.junit.runner.RunWith;
         publish = true //generating a report with public link
 )
 public class CukesRunner {}
+
+
