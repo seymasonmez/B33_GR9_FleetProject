@@ -1,7 +1,7 @@
 package com.fleet.step_definitions;
 
 import com.fleet.pages.BasePage;
-import com.fleet.pages.US_09_CreateCalendarEventPage;
+import com.fleet.pages.US_09_US_10_CreateCalendarEventPage;
 import com.fleet.utilities.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -10,7 +10,7 @@ import org.junit.Assert;
 import org.openqa.selenium.Keys;
 
 public class US_09_CalendarRepeatEveryStepDefs extends BasePage {
-    US_09_CreateCalendarEventPage createCalendarEventPage = new US_09_CreateCalendarEventPage();
+    US_09_US_10_CreateCalendarEventPage createCalendarEventPage = new US_09_US_10_CreateCalendarEventPage();
     @Given("user clicks on Calendar Events under Activities tab")
     public void user_clicks_on_calendar_events_under_activities_tab() {
 
@@ -20,7 +20,7 @@ public class US_09_CalendarRepeatEveryStepDefs extends BasePage {
     public void user_clicks_on_create_calendar_event_tab() {
         BrowserUtils.waitFor(3);
 
-        createCalendarEventPage.createCalenderEventBtn.click();
+        createCalendarEventPage.createCalendarEventBtn.click();
     }
     @Given("checks the Repeat checkbox")
     public void checks_the_repeat_checkbox() {
