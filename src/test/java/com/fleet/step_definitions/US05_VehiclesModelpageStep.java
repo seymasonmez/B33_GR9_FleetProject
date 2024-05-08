@@ -12,13 +12,10 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
 import java.util.List;
 
 
@@ -108,40 +105,32 @@ public class US05_VehiclesModelpageStep {
         }
 
 
-
     }
 
     @Then("I should see the message {string}")
     public void iShouldSeeTheMessage(String arg0) {
         VehicleModelPage vehicleModelPage = new VehicleModelPage();
 
-        try {
-            Assert.assertEquals(arg0, vehicleModelPage.noPermissionMessage.getText());
-        } catch (AssertionError e) {
 
-            for (int i = 0; i < 5; i++) {
-                Driver.getDriver().navigate().refresh();
-                try {
-                    Assert.assertEquals(arg0, vehicleModelPage.noPermissionMessage.getText());
+        Driver.getDriver().navigate().refresh();
 
-                    throw new AssertionError("Error:  403 Forbidden..");
-                } catch (AssertionError ex) {
 
-                }
-            }
+        if (vehicleModelPage.isErrorPageDisplayed()) {
+
+            String errorMessage = vehicleModelPage.getErrorMessage();
+
+            Assert.assertEquals(arg0, errorMessage);
+        } else {
+
+            Assert.fail("Error: Page with error message is not displayed after page refresh.");
+
+
         }
-
-
-        Assert.fail("Error: Message not displayed after page refreshes.");
-
-
-
-
-
     }
 
     @And("I should not be able to access the Vehicles Model page")
     public void iShouldNotBeAbleToAccessTheVehiclesModelPage() {
         System.out.println("You do not have permission to perform this action.");
     }
+
 }
