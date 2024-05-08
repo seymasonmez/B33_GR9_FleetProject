@@ -5,7 +5,7 @@ Feature: Default
 
 	@B33G9-140
 	Scenario Outline: US010AC01TC01 Verify that users can type messages in to the Description field on the Calendar Events page.
-		Given Given the user logged in as "<userType>"
+				Given the user logged in as "<userType>"
 				Given I am on the Calendar Events page
 				When I click on the Create Calender Event
 				And I click repeat checkbox

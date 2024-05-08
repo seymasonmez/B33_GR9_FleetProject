@@ -15,10 +15,7 @@ public class US10_StepDefs extends BasePage {
 
     CalenderEventPage calenderEventPage = new CalenderEventPage();
 
-    @Given("Given the user logged in as {string}")
-    public void given_the_user_logged_in_as(String userType) {
-        calenderEventPage.loginByUserType(userType);
-    }
+
     @Given("I am on the Calendar Events page")
     public void i_am_on_the_calendar_events_page() {
         navigateToModule("Activities","Calendar Events");
