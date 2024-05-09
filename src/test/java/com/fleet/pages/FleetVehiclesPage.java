@@ -14,7 +14,7 @@ public class FleetVehiclesPage {
     @FindBy(linkText = "...")
     public WebElement dotsIcon;
 
-    @FindBy(xpath = "(//ul//li[@class='launcher-item']//*[contains(@title,'View')])[1]")
+    @FindBy(xpath = "//ul//li[@class='launcher-item']//*[contains(@title,'View')]")
     public WebElement viewIcon;
 
     @FindBy(xpath = "(//ul//li[@class='launcher-item']//*[contains(@title,'Edit')])[1]")
