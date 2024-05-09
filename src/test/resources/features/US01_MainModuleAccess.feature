@@ -2,12 +2,6 @@
 Feature: Accessing Main Modules of the App
 	User Story: As a user, I should be accessing all the main modules of the app
 
-	#{color:#DE350B}User Story :{color}
-	#As a user, I should be accessing all the main modules of the app.
-	#
-	#{color:#DE350B}AC #1:{color} Verify that Store and Sales managers see 8 module names
-	#*Expected module names:*
-	#Dashboards, Fleet, Customers, Sales, Activities, Marketing, Reports & Segments, System
 	@B33G9-169
 	#Scenario: US01AC01TC01: Verify that Store and Sales managers see 8 module names
 		Scenario Outline: Store or Sales manager see 8 module names
@@ -28,12 +22,7 @@ Feature: Accessing Main Modules of the App
 		      | sales manager | salesmanager101 | UserUser123 |
 		      | store manager | storemanager51  | UserUser123 |	
 
-	#{color:#DE350B}User Story :{color}
-	#As a user, I should be accessing all the main modules of the app.
-	#{color:#DE350B}AC #2: {color}
-	#Verify that ** Drivers see 4 module names.
-	#*Expected module names:*
-	#Fleet, Customers, Activities, System
+
 	@B33G9-170
 	#Scenario: US01AC02TC01: Verify that ** Drivers see 4 module names.
 		Scenario Outline: Drivers see 4 module names

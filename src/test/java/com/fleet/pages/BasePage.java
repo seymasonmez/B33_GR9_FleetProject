@@ -1,8 +1,5 @@
 package com.fleet.pages;
 
-
-
-
 import com.fleet.utilities.BrowserUtils;
 import com.fleet.utilities.Driver;
 import org.junit.Assert;
@@ -38,53 +35,6 @@ public abstract class BasePage {
 
     @FindBy(linkText = "My User")
     public WebElement myUser;
-
-    @FindBy(linkText = "Fleet Management")
-    public WebElement header;
-
-    @FindBy(partialLinkText = "Fleet")
-    public WebElement fleetTab;
-
-    @FindBy(partialLinkText = "Customers")
-    public WebElement customersTab;
-
-    @FindBy(partialLinkText = "Activities")
-    public WebElement activitiesTab;
-
-    @FindBy(partialLinkText = "System")
-    public WebElement systemTab;
-
-    @FindBy(partialLinkText = "Marketing")
-    public WebElement marketingTab;
-
-    @FindBy(partialLinkText = "Sales")
-    public WebElement salesTab;
-
-    @FindBy(partialLinkText = "Reports & Segments")
-    public WebElement reportsSegmentsTab;
-
-
-    @FindBy(partialLinkText = "Dashboards")
-    public WebElement dashboardsTab;
-
-    /**
-     * Element Display assertion
-     * @return boolean (true or false) for element display assertion
-     */
-    public boolean isWebElementDisplayed(WebElement element) {
-        return element.isDisplayed();
-    }
-
-
-
-
-
-
-
-
-
-
-
 
     public BasePage() {
         PageFactory.initElements(Driver.getDriver(), this);
