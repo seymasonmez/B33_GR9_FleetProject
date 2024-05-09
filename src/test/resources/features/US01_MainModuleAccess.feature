@@ -2,6 +2,7 @@
 Feature: Accessing Main Modules of the App
 	User Story: As a user, I should be accessing all the main modules of the app
 
+
 	@B33G9-169
 	#Scenario: US01AC01TC01: Verify that Store and Sales managers see 8 module names
 		Scenario Outline: Store or Sales manager see 8 module names
