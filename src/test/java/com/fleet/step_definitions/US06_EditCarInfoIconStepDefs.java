@@ -21,9 +21,12 @@ public class US06_EditCarInfoIconStepDefs extends BasePage {
     }
     @When("user hover mouse over the three dots")
     public void user_hover_mouse_over_the_dots() {
+
+        BrowserUtils.waitFor(3);
+
         BrowserUtils.hover(fvPage.dotsIcon);
 
-        BrowserUtils.waitForVisibility(fvPage.viewIcon,5);
+        BrowserUtils.waitForVisibility(fvPage.viewIcon,15);
 
 
     }
