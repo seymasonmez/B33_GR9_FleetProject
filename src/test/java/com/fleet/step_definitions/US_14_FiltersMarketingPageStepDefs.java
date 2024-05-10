@@ -1,16 +1,21 @@
 package com.fleet.step_definitions;
 
+import com.fleet.pages.BasePage;
+import com.fleet.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class US_14_FiltersMarketingPageStepDefs {
+public class US_14_FiltersMarketingPageStepDefs extends BasePage {
+
 
     @When("the user clicks to Marketing module")
     public void the_user_clicks_to_marketing_module() {
 
     }
+
     @When("the user clicks to the Campaigns")
     public void the_user_clicks_to_the_campaigns() {
+
 
     }
     @When("the user clicks to the filter icon")
