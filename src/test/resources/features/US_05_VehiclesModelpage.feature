@@ -1,5 +1,5 @@
-
 Feature: Viewing columns on the Vehicles Model page
+
   @US05_01
   Scenario Outline: Verify that <user_type> can see all necessary columns
     Given User is logged in as "<user_type>"
@@ -20,13 +20,15 @@ Feature: Viewing columns on the Vehicles Model page
       | user_type     |
       | store manager |
       | sales manager |
+
   @US05_02
   Scenario Outline: Verify that <user_type> can see all necessary columns
     Given User is logged in as "<user_type>"
     When I attempt to access the Vehicles Model page
-    Then I should see the message "You do not have permission to perform this action."
+    Then I should see the message "You don't have permission to access this page."
     And I should not be able to access the Vehicles Model page
 
     Examples:
       | user_type |
       | driver    |
+
