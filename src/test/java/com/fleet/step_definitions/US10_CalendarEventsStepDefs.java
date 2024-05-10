@@ -9,7 +9,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class US10_StepDefs extends BasePage {
+public class US10_CalendarEventsStepDefs extends BasePage {
 
     US_09_US_10_CreateCalendarEventPage createCalendarEventPage = new US_09_US_10_CreateCalendarEventPage();
 
