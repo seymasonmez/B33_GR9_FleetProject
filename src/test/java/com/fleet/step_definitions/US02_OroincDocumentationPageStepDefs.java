@@ -35,7 +35,6 @@ public class US02_OroincDocumentationPageStepDefs extends BasePage {
         String expectedOroincURL = "https://doc.oroinc.com/";
 
         Assert.assertEquals(expectedOroincURL, actualURL);
-
     }
 
 }
