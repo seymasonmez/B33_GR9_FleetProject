@@ -13,6 +13,9 @@ public class DashboardPage {
     @FindBy (xpath = "//a[.='Learn how to use this space']")
     public WebElement LearnHowToUseButton;
 
+    @FindBy (xpath = "//i[@title='Get help']")
+    public WebElement QuestionMarkIcon;
+
 
 
 
