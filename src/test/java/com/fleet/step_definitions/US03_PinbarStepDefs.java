@@ -34,21 +34,26 @@ public class US03_PinbarStepDefs {
 
 
     @Then("User sees expected text on the new opened page")
-    public void user_sees_expected_text_on_the_new_opened_page() {
+    public void user_sees_expected_text_on_the_new_opened_page(String expectedText) {
 
         BrowserUtils.waitForVisibility(howToUsePinbarPage.howToUseHeader,5);
 
-        Assert.assertTrue(howToUsePinbarPage.howToUseHeader.isDisplayed());
-        Assert.assertTrue(howToUsePinbarPage.textDescriptionOnThePage.isDisplayed());
+        Assert.assertEquals(expectedText, howToUsePinbarPage.howToUseHeader.getText());
+
+    }
+
+    @Then("User sees second expected text on the new opened page")
+    public void userSeesSecondExpectedTextOnTheNewOpenedPage(String expectedText) {
+
+        Assert.assertEquals(expectedText, howToUsePinbarPage.textDescriptionOnThePage.getText());
 
     }
 
 
     @Then("Verify that users sees an image on the page with expected path.")
-    public void verify_that_users_sees_an_image_on_the_page_with_expected_path() {
+    public void verify_that_users_sees_an_image_on_the_page_with_expected_path(String expectedLink) {
 
-        String expectedValue = "/bundles/oronavigation/images/pinbar-location.jpg";
-        Assert.assertTrue(howToUsePinbarPage.pictureOnThePage.getAttribute("src").contains(expectedValue));
+        Assert.assertTrue(howToUsePinbarPage.pictureOnThePage.getAttribute("src").contains(expectedLink));
 
     }
 
