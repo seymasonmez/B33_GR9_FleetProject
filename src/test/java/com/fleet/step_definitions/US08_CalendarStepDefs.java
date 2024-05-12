@@ -49,7 +49,7 @@ public class US08_CalendarStepDefs extends BasePage {
     @Then("user should see the error message {string}")
     public void userShouldSeeTheErrorMessage(String message) {
         BrowserUtils.waitFor(3);
-        Assert.assertEquals(activitiesPage.message.getText(),message);
+        Assert.assertEquals(message,activitiesPage.message.getText());
     }
 
     //@Given("they view the Repeat Every input option")
