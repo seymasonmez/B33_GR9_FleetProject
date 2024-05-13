@@ -14,10 +14,12 @@ public class US07_VehiclesPage {
 public WebElement VehicleCheckbox;
 
 
-    @FindBy(xpath = "/html/body/div[2]/div[2]/div[1]/div[2]/div[3]/div[3]/div[2]/div[2]/div[2]/div/table/tbody/tr/td[1]/input")
+
+    @FindBy(xpath = "//table/tbody/tr/td[1]/input")
     public List<WebElement> checkboxes;
 
-    @FindBy(xpath = "/html/body/div[2]/div[2]/div[1]/div[2]/div[3]/div[3]/div[2]/div[2]/div[2]/div/table/thead/tr/th[1]/div/button/input")
+
+    @FindBy(xpath = "//table/thead/tr/th[1]/div/button/input")
     public WebElement firstCheckbox;
     
     
