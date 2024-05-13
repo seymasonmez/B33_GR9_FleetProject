@@ -21,7 +21,7 @@ public class US_14_FiltersMarketingPageStepDefs extends BasePage {
         campaignsPage.filterIcon.click();
     }
 
-    @Then("the user should see all {int} filter options checked by default")
+    @When("the user should see all {int} filter options checked by default")
     public void the_user_should_see_all_filter_options_checked_by_default(Integer int1, io.cucumber.datatable.DataTable dataTable) {
         campaignsPage.isWebElementDisplayed(campaignsPage.nameFilter);
         campaignsPage.isWebElementDisplayed(campaignsPage.codeFilter);
