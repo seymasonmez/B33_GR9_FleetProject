@@ -31,6 +31,7 @@ public class US10_CalendarEventsStepDefs extends BasePage {
     }
     @When("I click repeat checkbox")
     public void i_click_repeat_checkbox() {
+        BrowserUtils.waitForClickablility(createCalendarEventPage.repeatCheckBox,10);
         BrowserUtils.selectCheckBox(createCalendarEventPage.repeatCheckBox,true);
     }
     @Then("the text {string} should be visible in the Description field")
