@@ -1,6 +1,7 @@
 package com.fleet.pages;
 
 import com.fleet.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -15,8 +16,6 @@ public class DashboardPage {
 
     @FindBy (xpath = "//i[@title='Get help']")
     public WebElement QuestionMarkIcon;
-
-
 
 
 }
