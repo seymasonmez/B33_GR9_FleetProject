@@ -55,6 +55,7 @@ public class US03_PinbarStepDefs {
 
         Assert.assertTrue(howToUsePinbarPage.pictureOnThePage.getAttribute("src").contains(expectedLink));
 
+
     }
 
 
