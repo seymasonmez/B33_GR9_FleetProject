@@ -1,7 +1,8 @@
+@US04
 Feature: Access to Vehicle contracts page
 #US4-     As a user, I want to access to Vehicle contracts page
 #AC1: Verify that Store managers and Sales managers can access the Vehicle Contracts page.
-	
+
 	@B33G9-153
 	Scenario Outline: Verify that Store managers and Sales managers can access the Vehicle Contracts page.
 		Given User is logged in as "<user_type>"
@@ -29,6 +30,6 @@ Feature: Access to Vehicle contracts page
 		Then user should see the error message
 		Examples:
 			| userType |
-			| "Driver" |
+			| "driver" |
 
 		 # expectedMessage :“You do not have permission to perform this action.”
