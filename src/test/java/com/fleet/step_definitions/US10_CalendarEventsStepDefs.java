@@ -21,7 +21,7 @@ public class US10_CalendarEventsStepDefs extends BasePage {
     }
     @When("I click on the Create Calender Event")
     public void i_click_on_the_create_calender_event() {
-        BrowserUtils.waitFor(3);
+        BrowserUtils.waitForClickablility(createCalendarEventPage.createCalendarEventBtn,10);
         createCalendarEventPage.createCalendarEventBtn.click();
     }
     @When("I type {string} into the Description field")
