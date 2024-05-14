@@ -21,7 +21,7 @@ public class US10_CalendarEventsStepDefs extends BasePage {
     }
     @When("I click on the Create Calender Event")
     public void i_click_on_the_create_calender_event() {
-        BrowserUtils.waitFor(3);
+        BrowserUtils.waitForClickablility(createCalendarEventPage.createCalendarEventBtn,10);
         createCalendarEventPage.createCalendarEventBtn.click();
     }
     @When("I type {string} into the Description field")
@@ -31,6 +31,7 @@ public class US10_CalendarEventsStepDefs extends BasePage {
     }
     @When("I click repeat checkbox")
     public void i_click_repeat_checkbox() {
+        BrowserUtils.waitForClickablility(createCalendarEventPage.repeatCheckBox,10);
         BrowserUtils.selectCheckBox(createCalendarEventPage.repeatCheckBox,true);
     }
     @Then("the text {string} should be visible in the Description field")

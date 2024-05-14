@@ -18,7 +18,8 @@ public class US_09_US_10_CreateCalendarEventPage extends BasePage {
     public WebElement repeatEveryNumberBox;
     @FindBy(xpath = "//span[contains(@id,'temp-validation-name')]")
     public WebElement repeatEveryNumberErrorMessage;
-    @FindBy (xpath = "//iframe[contains(@id,'oro_calendar_event_form_description-uid-663')]")
+
+    @FindBy (xpath = "//iframe[contains(@id,'oro_calendar_event_form_description-uid-66')]")
     public WebElement iframeForDescriptionField;
 
     @FindBy(xpath = "//body[@id = 'tinymce']")
