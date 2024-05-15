@@ -3,6 +3,7 @@ package com.fleet.step_definitions;
 import com.fleet.pages.BasePage;
 import com.fleet.pages.US08_Calendar_Events_Page;
 import com.fleet.utilities.BrowserUtils;
+import com.fleet.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -31,7 +32,8 @@ public class US08_CalendarStepDefs extends BasePage {
 
     @When("user view the Repeat Every input option")
     public void userViewTheRepeatEveryInputOption() {
-        BrowserUtils.waitFor(3);
+        Driver.getDriver().navigate().refresh();
+        BrowserUtils.waitFor(5);
        BrowserUtils.selectCheckBox(activitiesPage.repeatCheckBox,true);
     }
 
