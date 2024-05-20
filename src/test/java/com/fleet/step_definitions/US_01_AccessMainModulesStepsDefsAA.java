@@ -1,6 +1,5 @@
 package com.fleet.step_definitions;
 
-import com.fleet.pages.US01_MainModule;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -13,7 +12,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-public class US_01_AccessMainModulesAA {
+public class US_01_AccessMainModulesStepsDefsAA {
 
     private WebDriver driver;
 

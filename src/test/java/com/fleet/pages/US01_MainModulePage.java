@@ -1,18 +1,15 @@
 package com.fleet.pages;
 
 
-import com.fleet.utilities.Driver;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import com.fleet.utilities.Driver;
 
 
-public class US01_MainModule  {
+public class US01_MainModulePage {
     WebDriver driver;
-    public US01_MainModule() {
+    public US01_MainModulePage() {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
